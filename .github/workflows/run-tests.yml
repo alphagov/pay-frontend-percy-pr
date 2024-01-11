@@ -137,7 +137,7 @@ jobs:
         run: |
           echo "::warning title=GitHub Actions secrets::Workflow requires 'PERCY_TOKEN' secret"
           exit 1
-        name: Log Percy secret is found message
+      - name: Log Percy secret is found message
         env:
           PERCY_TOKEN: ${{ secrets.PERCY_TOKEN }}
         if: ${{ env.PERCY_TOKEN }}
