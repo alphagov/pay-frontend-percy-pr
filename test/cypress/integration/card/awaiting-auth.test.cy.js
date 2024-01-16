@@ -96,8 +96,6 @@ describe('Awaiting auth', () => {
       connectorValidPatchConfirmedChargeDetails(chargeId)
     ]
 
-    cy.percySnapshot()
-
     cy.task('clearStubs')
     cy.task('setupStubs', confirmPaymentDetailsStubs)
 
